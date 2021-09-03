@@ -17,9 +17,12 @@ console.log(city_name);
 const first_name = "Brock";
 const last_name = "PlayAuto";
 const my_name = {
-    first_name : "Brock",
-    last_name : "PlayAuto",
+    first_name,
+    last_name,
 }
 
-const json = JSON.stringify(my_name);
+let json = JSON.stringify(my_name);
+console.log(json);
+
+json = JSON.parse(json);
 console.log(json);

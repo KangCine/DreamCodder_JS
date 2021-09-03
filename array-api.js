@@ -107,6 +107,10 @@ const product_data = {
                 code: '',
                 name: '비락',
             },
+            {
+                code: '',
+                name: '비락2',
+            },
         ],
     },
 };
@@ -128,5 +132,5 @@ console.log(res1);
 //       "플토2.0/비락"
 // 와 같은 문자열을 만들어보세요.
 
-const res2 = product_data.options.values.reduce((prev, curr) => prev.name + '/' + curr.name);
+const res2 = product_data.options.values.reduce((prev, curr) => prev + curr.name + '/', '').slice(0,-1);
 console.log(res2);
